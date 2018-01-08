@@ -22,8 +22,10 @@ function deepestChild() {
   console.log(current[0]);
   while (current.length > 0) {
     next = current[0].children;
-    current = next;
-    if (current.length === 0) {
+    if (next.length > 0) {
+      current = next;
+    }
+    if (next.length === 0) {
       return current;
     }
   }
