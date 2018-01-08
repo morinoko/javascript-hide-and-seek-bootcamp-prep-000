@@ -19,11 +19,13 @@ function deepestChild() {
   let grandNode = document.querySelector('div#grand-node');
   let current = grandNode.children;
   let next;
-  while (current) .length >= 1) {
+  console.log(current[0]);
+  while (current.length > 0) {
     next = current[0].children;
     current = next;
     if (current.length === 0) {
-      return current.innerHTML;
+      console.log(current.innerHTML);
+      return current;
     }
   }
 }
