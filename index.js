@@ -24,7 +24,6 @@ function deepestChild() {
     next = current[0].children;
     current = next;
     if (current.length === 0) {
-      console.log(current.innerHTML);
       return current;
     }
   }
